@@ -11,7 +11,8 @@ import SwiftUI
 struct QrCodeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouterView()
+                .preferredColorScheme(.light)
         }
     }
 }

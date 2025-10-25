@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		937147E72EACB02D004EF577 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 937147E62EACB02D004EF577 /* CodeScanner */; };
+		937147EA2EACB054004EF577 /* QrScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937147E92EACB054004EF577 /* QrScannerView.swift */; };
+		937147ED2EACB18B004EF577 /* ScreenEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937147EC2EACB18B004EF577 /* ScreenEnum.swift */; };
+		937147EF2EACB1E6004EF577 /* GenerateCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937147EE2EACB1E6004EF577 /* GenerateCodeView.swift */; };
+		937147F12EACB230004EF577 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937147F02EACB230004EF577 /* RouterView.swift */; };
+		937147F62EACB7E4004EF577 /* QrCodeGeneratorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937147F52EACB7E4004EF577 /* QrCodeGeneratorService.swift */; };
 		D5C08EFA2EAC8DB400D83814 /* QrCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C08EF92EAC8DB400D83814 /* QrCodeApp.swift */; };
-		D5C08EFC2EAC8DB400D83814 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C08EFB2EAC8DB400D83814 /* ContentView.swift */; };
 		D5C08EFE2EAC8DB600D83814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C08EFD2EAC8DB600D83814 /* Assets.xcassets */; };
 		D5C08F012EAC8DB600D83814 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C08F002EAC8DB600D83814 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		937147E92EACB054004EF577 /* QrScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerView.swift; sourceTree = "<group>"; };
+		937147EC2EACB18B004EF577 /* ScreenEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenEnum.swift; sourceTree = "<group>"; };
+		937147EE2EACB1E6004EF577 /* GenerateCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCodeView.swift; sourceTree = "<group>"; };
+		937147F02EACB230004EF577 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		937147F52EACB7E4004EF577 /* QrCodeGeneratorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeGeneratorService.swift; sourceTree = "<group>"; };
 		D5C08EF62EAC8DB400D83814 /* QrCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QrCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C08EF92EAC8DB400D83814 /* QrCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeApp.swift; sourceTree = "<group>"; };
-		D5C08EFB2EAC8DB400D83814 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D5C08EFD2EAC8DB600D83814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C08F002EAC8DB600D83814 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +35,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937147E72EACB02D004EF577 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		937147E82EACB042004EF577 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				937147E92EACB054004EF577 /* QrScannerView.swift */,
+				937147EE2EACB1E6004EF577 /* GenerateCodeView.swift */,
+				937147F02EACB230004EF577 /* RouterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		937147EB2EACB0EC004EF577 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				937147EC2EACB18B004EF577 /* ScreenEnum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		937147F22EACB6B9004EF577 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				937147F52EACB7E4004EF577 /* QrCodeGeneratorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		D5C08EED2EAC8DB400D83814 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +87,10 @@
 		D5C08EF82EAC8DB400D83814 /* QrCode */ = {
 			isa = PBXGroup;
 			children = (
+				937147F22EACB6B9004EF577 /* Service */,
+				937147EB2EACB0EC004EF577 /* Model */,
+				937147E82EACB042004EF577 /* View */,
 				D5C08EF92EAC8DB400D83814 /* QrCodeApp.swift */,
-				D5C08EFB2EAC8DB400D83814 /* ContentView.swift */,
 				D5C08EFD2EAC8DB600D83814 /* Assets.xcassets */,
 				D5C08EFF2EAC8DB600D83814 /* Preview Content */,
 			);
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = D5C08EED2EAC8DB400D83814;
+			packageReferences = (
+				937147E52EACB02D004EF577 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = D5C08EF72EAC8DB400D83814 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C08EFC2EAC8DB400D83814 /* ContentView.swift in Sources */,
+				937147ED2EACB18B004EF577 /* ScreenEnum.swift in Sources */,
+				937147EF2EACB1E6004EF577 /* GenerateCodeView.swift in Sources */,
+				937147F12EACB230004EF577 /* RouterView.swift in Sources */,
+				937147EA2EACB054004EF577 /* QrScannerView.swift in Sources */,
+				937147F62EACB7E4004EF577 /* QrCodeGeneratorService.swift in Sources */,
 				D5C08EFA2EAC8DB400D83814 /* QrCodeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +317,13 @@
 				DEVELOPMENT_TEAM = 665W8JZLV8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera is needed to scan Qr code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,6 +331,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "test-task.QrCode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,11 +352,13 @@
 				DEVELOPMENT_TEAM = 665W8JZLV8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera is needed to scan Qr code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +366,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "test-task.QrCode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		937147E52EACB02D004EF577 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		937147E62EACB02D004EF577 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 937147E52EACB02D004EF577 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5C08EEE2EAC8DB400D83814 /* Project object */;
 }
