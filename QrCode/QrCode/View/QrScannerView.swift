@@ -11,6 +11,7 @@ import CodeScanner
 struct QrScannerView: View {
     
     @State private var isShowingScanner = false
+    @State private var isShowingBarcodeScanner = false
     @State private var scannedCode: String?
     
     var body: some View {
@@ -37,7 +38,7 @@ struct QrScannerView: View {
         }
         .sheet(isPresented: $isShowingScanner) {
             CodeScannerView(
-                codeTypes: [.qr],
+                codeTypes: [.qr, .ean8, .ean13, .pdf417],
                 completion: self.handleScanResult
             )
         }
